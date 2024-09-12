@@ -1,0 +1,132 @@
+:root {
+    --RED: #E63946;
+    --LIGHT: #F1FAEE;
+    --AQUA: #A8DADC;
+    --LIGHT-BLUE: #457B9D;
+    --DARK-BLUE: #1D3557;
+
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--DARK-BLUE);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+img {
+    width: 200px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center / cover url(images/IfeHead.jpg);
+    color: #ffffff;
+    height: 400px;
+}
+
+.heroContent {
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+#heroTitle {
+    background-color: var(--DARK-BLUE); 
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#heroCaption {
+    font-weight: 400;
+    background-color: var(--LIGHT-BLUE);
+    max-width: 80%; 
+    padding: 20px;
+    margin: 10px;
+}
+
+#activities {
+    margin: 0 auto;
+    padding: 32px 24px 16px;
+    background-color: var(--LIGHT);
+}
+
+#activitiesHeader {
+    margin-bottom: 32px;
+}
+
+.activities__img {
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.activitiesContent {
+    margin-top: 12px;
+}
+
+.activitiesContent--p {
+    margin-bottom: 48px; 
+}
+
+#tour-guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    padding: 25px;
+    background-color: var(--AQUA);
+    border-bottom: 20px solid var(--DARK-BLUE);
+    border-radius: 10px;
+    width: 50%;
+}
+
+.tour-guide-content {
+    margin: 12px 0;
+}
+
+.card__item {
+    margin: 0 8px;
+}
+
+#tour-guide-img {
+    border-radius: 100px;
+    width: 100px;
+}
+
+@media (min-width: 1000px) {
+    #heroTitle {
+        font-size: 24px;
+    }
+
+    #heroCaption {
+        font-size: 16px; 
+    }
+
+    .activitiesActivitiesItem {
+        margin: 25px;
+        flex: 1 1 0px;
+    }
+
+    #activitiesActivitiesList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1028px;
+    }
+
+    #tour-guide {
+        max-width: 700px;
+    }  
+
+    #tour-guide-img {
+        width: 150px;
+    }
+}
